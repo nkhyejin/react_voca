@@ -1,20 +1,15 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import useFetch from "../hooks/useFetch";
 
 const DayList = () => {
-  const [days, setDays] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:3001/days")
-      .then((res) => res.json())
-      .then((data) => setDays(data));
-  }, []);
+  const days = useFetch("http://localhost:3001/days");
 
   return (
     <ul className="list_day">
       {days.map((day) => (
-        <Link to={`/day/${day.day}`}>
-          <li key={day.id}>{`Day ${day.day}`}</li>
+        <Link key={day.id} to={`/day/${day.day}`}>
+          <li>{`Day ${day.day}`}</li>
         </Link>
       ))}
     </ul>
