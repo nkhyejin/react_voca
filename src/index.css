@@ -48,3 +48,15 @@ a {
   font-weight: bold;
   border-radius: 4px;
 }
+
+/* Three values: flex-grow | flex-shrink | flex-basis */
+.list_day {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list_day li {
+  margin-left: 10px;
+  flex: 20% 0 0;
+  box-sizing: border-box;
+  padding: 10px;
+}
