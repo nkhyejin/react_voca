@@ -53,12 +53,27 @@ a {
 .list_day {
   display: flex;
   flex-wrap: wrap;
+  color: white;
 }
 .list_day li {
   margin-left: 10px;
-  flex: 20% 0 0;
+  flex: 15% 0 0;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 15px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffc107;
+  font-weight: bold;
+}
+.list_day li a {
+  color: white;
+}
+.list_day li:hover {
+  background-color: #ffecb3;
+}
+.list_day li:hover a {
+  color: #caae53;
 }
 
 table {
