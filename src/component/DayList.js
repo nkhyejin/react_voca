@@ -5,9 +5,9 @@ const DayList = () => {
   return (
     <ul className="list_day">
       {dummy.days.map((day) => (
-        <li key={day.id}>
-          <Link to={`/day/${day.day}`}>Day {day.day}</Link>
-        </li>
+        <Link to={`/day/${day.day}`}>
+          <li key={day.id}>{`Day ${day.day}`}</li>
+        </Link>
       ))}
     </ul>
   );
