@@ -60,3 +60,19 @@ a {
   box-sizing: border-box;
   padding: 10px;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table td {
+  width: 25%;
+  height: 70px;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 26px;
+}
+
+table td:first-child {
+  width: 10%;
+}
