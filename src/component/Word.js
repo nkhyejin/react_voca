@@ -45,6 +45,10 @@ const Word = ({ word: w }) => {
     }
   };
 
+  if (word.length === 0) {
+    return <div> 단어가 없습니다. </div>;
+  }
+
   return word.id === 0 ? null : (
     <>
       <tr className={isDone ? "off" : ""}>
