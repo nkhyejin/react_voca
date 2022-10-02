@@ -19,7 +19,7 @@ const CreateWord = () => {
       .then((res) => {
         if (res.ok) {
           alert("성공했습니다.");
-          navigate("/");
+          navigate(`/day/${days.length + 1}`);
         }
       })
       .catch((error) => {
